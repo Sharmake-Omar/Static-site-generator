@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Voer deze workflow alleen uit bij pushes naar de 'main' branch
 
+permissions:
+  contents: write  # Nodig voor pushen naar GitHub Pages
+
 jobs:
   build:
     runs-on: ubuntu-latest
